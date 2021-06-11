@@ -8,11 +8,21 @@ console.log(document.all[6])
 //Print out all the box-titles. 
 let titles = body.getElementsByClassName("box-title");
 for(let i =0; i<titles.length; i++){
-    console.log(titles[i]);
+    titles[i].style.color="blue";
+}
+
+let boxes = body.getElementsByClassName("box");
+for(let i =0; i<titles.length; i++){
+    boxes[i].style.textAlign='center';
+}
+
+let bottons = body.getElementsByClassName("button");
+for(let i =0; i<titles.length; i++){
+    bottons[i].style.backgroundColor = '#21debe';
 }
 
 //Print out all the descriptions
-let descriptions = body.getElementsByClassName("description");
+let descriptions = body.getElementsByTagName("img");
 for ( let i =0; i < descriptions.length; i++){
-    console.log(descriptions[i]);
+    // descriptions[i].style.display = 'none';
 }
